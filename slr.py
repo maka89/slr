@@ -70,8 +70,8 @@ if __name__=="__main__":
 	
 	#Get 95% confidence interval
 	ci=slr.get_ci(0.95)
-	print("Confidence on slope: " + str(ci[0,:]))
-	print("Confidence interval on intercept: " + str(ci[1,:]))
+	print("95% Confidence interval on slope: " + str(ci[0,:]))
+	print("95% Confidence interval on intercept: " + str(ci[1,:]))
 	
 	#Plot prediction. 95% confidence interval
 	yp,[yp_low,yp_high] = slr.predict(xp, ci=0.95)
