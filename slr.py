@@ -69,7 +69,7 @@ if __name__=="__main__":
 	slr.fit(x,y)
 	
 	#Get 95% confidence interval
-	ci=get_ci(0.95)
+	ci=slr.get_ci(0.95)
 	print("Confidence on slope: " + str(ci[0,:]))
 	print("Confidence interval on intercept: " + str(ci[1,:]))
 	
